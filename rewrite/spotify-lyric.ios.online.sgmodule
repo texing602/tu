@@ -1,9 +1,0 @@
-#!name=🟢 歌词翻译.IOS
-#!desc=Spotify IOS 歌词翻译
-#!system=ios
-
-
-[mitm]
-hostname = spclient.wg.spotify.com
-[rewrite_local]
-^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/ url script-response-body https://raw.githubusercontent.com/dompling/Script/master/spotify/spotify-lyric.ios.js
