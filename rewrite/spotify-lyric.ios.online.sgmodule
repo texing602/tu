@@ -3,9 +3,8 @@
 #!system=ios
 
 
-[rewrite_local]
-^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/ url script-response-body spotify-lyric.ios.js
-
-
-[MITM]
+[mitm]
 hostname = spclient.wg.spotify.com
+[rewrite_local]
+^https:\/\/spclient\.wg\.spotify\.com\/color-lyrics\/v2\/track\/ url script-response-body https://raw.githubusercontent.com/dompling/Script/master/spotify/spotify-lyric.mac.js
+
